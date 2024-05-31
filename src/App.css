@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+h1,h2,h4,h5,h6,p,a{
+    font-family: Poppins;
+}
+
+.inquirynow {
+    position: relative; /* Ensure positioning context for the pseudo-element */
+}
+
+.inquirynow::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.855); /* Semi-transparent white */
+}
+
+.inquirynow {
+    /* Background image properties */
+    background-image: url("../src/images/Rectangle\ 342.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenttext {
+    z-index: 1; /* Ensure content is above pseudo-element */
+}
+.gradient-border {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #74CC7E, #00818A);
+    /* border-radius: 40px; */
+  }
+  .loginbutton {
+    border-radius: 8px; /* Adjust the value as needed */
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(to right,rgba(116, 204, 126, 1),rgba(0, 129, 138, 1));
+  }
+  .loginimage {
+    position: relative; /* Ensure positioning context for the pseudo-element */
+    background: linear-gradient(
+      to right, 
+      rgb(229, 244, 231), 
+      rgb(235, 250, 252)
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Center the background */
+    width: 50%; /* Ensure the width */
+    height: 480px; /* Ensure the height */
+    display: flex; /* Flexbox for centering child elements */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ensure shadow is applied */
+  }
+  
+  .loginimage::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white */
+  }
+  
+  .resterback {
+    position: relative; /* Ensure positioning context for the pseudo-element */
+    background: linear-gradient(
+      to right, 
+      rgb(229, 244, 231), 
+      rgb(235, 250, 252)
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Center the background */
+    width: 50%; /* Ensure the width */
+    height: 480px; /* Ensure the height */
+    display: flex; /* Flexbox for centering child elements */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ensure shadow is applied */
+  }
+  
+  .resterback::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white */
+  }
+
+.profilebutton{
+    background: linear-gradient(to right,rgb(98, 184, 108),rgb(2, 101, 108));
+}
+.backimage{
+    position: relative;
+}
+.photo{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+}
+.marginuser{
+  margin: auto;
+}
