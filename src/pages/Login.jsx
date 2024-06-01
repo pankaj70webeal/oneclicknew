@@ -2,6 +2,7 @@ import React from "react";
 import one from "../images/Group 610.png";
 import back from "../images/Profile.png";
 import { useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 
 function Login() {
   const navigate = useNavigate();
@@ -9,6 +10,9 @@ function Login() {
   const handlesignup = () => {
     navigate("/register");
   };
+ const handleforgot=()=>{
+  navigate("/forgotpassword")
+ }
 
   return (
     <div className="container mx-auto">
@@ -42,8 +46,8 @@ function Login() {
                 className="w-[300px] h-[35px] border rounded-lg pl-3 focus:outline-none"
                 placeholder="Password"
               />
-              <div className="forgot flex justify-end w-[300px]">
-                <p className="text-xs">Forgot password?</p>
+              <div className="forgot flex justify-end w-[300px]" onClick={handleforgot}>
+                <p className="text-xs cursor-pointer">Forgot password?</p>
               </div>
             </div>
             <div className="submit flex justify-center mt-10">

@@ -18,7 +18,10 @@ import Userinquiry from "./components/Userinquiry";
 import Addcertificate from "./components/award/Addcertificate";
 import Startupinquiry from "./components/Startupinquiry";
 import Startupinquirychat from "./components/Startupinquirychat";
-// import Sliderjoin from "./components/Sliderjoin";
+import Forgot from "./pages/Forgot";
+import Changepassword from "./pages/Changepassword";
+import Contectus from "./pages/Contectus";
+
 
 function App() {
   return (
@@ -167,6 +170,36 @@ function App() {
               <>
                 <Navbar />
                 <Startupinquiry/>
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/forgotpassword"
+            element={
+              <>
+                <Navbar />
+                <Forgot/>
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/change-password"
+            element={
+              <>
+                <Navbar />
+                <Changepassword />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/contect-us"
+            element={
+              <>
+                <Navbar />
+                <Contectus />
                 <Footer />
               </>
             }
